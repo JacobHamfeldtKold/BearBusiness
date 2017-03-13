@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.android.bearbusiness.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/bear_High_Five"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bearhighfive" />
+
+    <ImageView
+        android:id="@+id/bearlogo"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bearlogo" />
+
+    <TextView
+        android:id="@+id/Company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bearlogo"
+        android:text="@string/Company_Name"
+        android:textColor="#FF00FF"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/bear_sightseeing_AS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Company_name"
+        android:fontFamily="monospace"
+        android:text="Bear sightseeing A/S"
+        android:textAppearance="@style/Base.ThemeOverlay.AppCompat.Light"
+        android:textColor="#FFF5EE"
+        android:textSize="29dp" />
+
+    <TextView
+        android:id="@+id/email_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/bear_sightseeing_AS"
+        android:fontFamily="monospace"
+        android:paddingTop="10dp"
+        android:text="Email adress:"
+        android:textColor="#FF00FF"
+        android:textSize="29dp" />
+
+
+    <TextView
+        android:id="@+id/bearaddbearmaildotbear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_adress"
+        android:fontFamily="monospace"
+        android:text="bear@bearmail.bear"
+        android:textColor="#FFF5EE"
+        android:textSize="29dp" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bearaddbearmaildotbear"
+        android:fontFamily="monospace"
+        android:paddingTop="40dp"
+        android:text="Company Description:"
+        android:textColor="#FF00FF"
+        android:textSize="29dp" />
+
+    <TextView
+        android:id="@+id/textdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description"
+        android:fontFamily="monospace"
+        android:text="You pay as some money and we give and a lifechanging experience by showing you the amazing bears in their natural habitat."
+        android:textColor="#FFF5EE"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>
